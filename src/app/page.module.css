@@ -1,0 +1,27 @@
+.background {
+  animation: bg-anim 1s ease-in-out;
+}
+
+@keyframes bg-anim {
+  0%, 40% {
+    overflow: hidden;
+    background-color: #000;
+  }
+  60%, 75% {
+    overflow: hidden;
+    background-color: #fff;
+  }
+  99% {
+    overflow: hidden;
+  }
+}
+
+.box {
+  animation: box-anim 1s ease-in-out;
+}
+
+@keyframes box-anim {
+  0%, 75% {
+    transform: translate(100vw, 100vh) skew(30deg, 20deg);
+  }
+}
