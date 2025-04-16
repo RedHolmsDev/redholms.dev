@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "PORT=10000 next dev --turbopack",
+    "build": "next build && cp -r --parents ./public ./.next/static -t ./.next/standalone",
+    "start": "PORT=10000 next start",
     "lint": "next lint"
   },
   "dependencies": {
