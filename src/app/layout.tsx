@@ -19,10 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${openSans.className} antialiased`}>
-        {children}
-        <div id="portal"></div>
-      </body>
+    <body className={`${openSans.className} antialiased`}>
+      {children}
+      <div id="portal"></div>
+    </body>
     </html>
   );
 }
